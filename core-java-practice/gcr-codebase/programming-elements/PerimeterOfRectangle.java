@@ -10,6 +10,3 @@ class PerimeterOfRectangle {
         System.out.println(p);
     }
 }
- {
-    
-}
