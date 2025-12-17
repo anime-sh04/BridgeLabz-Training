@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Palindrome {
 
     // Function to check palindrome
     static boolean ispalin(int n) {
