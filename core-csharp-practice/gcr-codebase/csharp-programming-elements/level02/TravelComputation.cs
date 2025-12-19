@@ -1,20 +1,22 @@
 using System;
 
-class TravelComputation
-{
-    public static void Main(string[] args)
-    {
-        string name = Console.ReadLine();
-        string fromCity = Console.ReadLine();
-        string viaCity = Console.ReadLine();
-        string toCity = Console.ReadLine();
+class TravelComputation {
+    static void Main(string[] args) {
+		
+	  //Taking inputs
+	  string name = Console.ReadLine();
+      string fromCity = Console.ReadLine();
+	  string viaCity = Console.ReadLine();
+	  string toCity = Console.ReadLine();
 
-        double fromToVia = Convert.ToDouble(Console.ReadLine());
-        double viaToFinalCity = Convert.ToDouble(Console.ReadLine());
-        double timeTaken = Convert.ToDouble(Console.ReadLine());
+      double distanceFromToVia = Convert.ToDouble(Console.ReadLine());
+      double timeFromToVia = Convert.ToDouble(Console.ReadLine());
+      double distanceViaToFinalCity = Convert.ToDouble(Console.ReadLine());
+      double timeViaToFinalCity = Convert.ToDouble(Console.ReadLine());
 
-        double totalDistance = fromToVia + viaToFinalCity;
+      double totalDistance = distanceFromToVia + distanceViaToFinalCity;
+      double totalTime = timeFromToVia + timeViaToFinalCity;
 
-        Console.WriteLine("The results of the trip are: " +name +", "+totalDistance);
-    }
+      Console.WriteLine("The results of the trip are: totalDistance "+totalDistance+", totalTime "+ totalTime+ "hr" );
+   }
 }
