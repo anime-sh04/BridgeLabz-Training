@@ -6,3 +6,4 @@
 - **17th December 2025** : Solved 10 Google Classroom codebase questions in Java.
 - **18th December 2025** : Learned C# basics, studied .NET basic architecture, and solved 10 Google Classroom codebase questions along with 2 LeetCode problems using C#.
 - **19th December 2025** : Learned about Operators and Datatypes also solved 26 Google classroom questions
+- **20th December 2025** : Learned and practiced all 6 access modifiers in C# (public, private, protected, internal, protected internal, private protected) with detailed examples.
