@@ -42,7 +42,7 @@
 
 ---
 
-### 🔴 20th December 2025
+### 🟢 20th December 2025
 - 🔐 Learned and practiced **Access Modifiers in C#** with detailed examples:
   - `public`
   - `private`
@@ -59,7 +59,14 @@
   - `if-else`
   - `else-if`
   - `switch`
-  -  Understood decision-making and branching logic clearly.
-  -  Successfully solved **all 3 levels of Google Classroom problems** related to control flow.
+- 🧠 Understood decision-making and branching logic clearly.
+- 🏆 Successfully solved **all 3 levels of Google Classroom problems** related to control flow.
 
+---
+
+### 🟢 23rd December 2025
+- 🧮 Learned **Arrays in C#**:
+  - Declaring and initializing arrays
+  - Accessing and modifying elements
+  - Solved multiple **array-based problems** from Google Classroom.
 ---
