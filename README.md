@@ -70,3 +70,12 @@
   - Accessing and modifying elements
   - Solved multiple **array-based problems** from Google Classroom.
 ---
+
+### 🟢 24th December 2025
+- 🧠 Learned **Methods in C#**:
+  - Method declaration and invocation
+  - Parameters and return types
+  - Method overloading
+- 🏆 Solved **Google Classroom problems – Level 1, Level 2, and Level 3** based on methods and logic building.
+
+---
