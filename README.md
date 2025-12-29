@@ -79,3 +79,14 @@
 - 🏆 Solved **Google Classroom problems – Level 1, Level 2, and Level 3** based on methods and logic building.
 
 ---
+### 🟢 26th December 2025
+
+- Learned **Strings in C#** in depth:
+
+  - String declaration and initialization
+  - String immutability
+  - Common string methods:
+
+  - Length , ToUpper(), ToLower() , Substring(), IndexOf(), Contains(), Split(), Replace(), Trim()
+
+🏆 Solved multiple Google Classroom problems based on string operations and text processing.
