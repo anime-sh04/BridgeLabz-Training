@@ -90,3 +90,25 @@
   - Length , ToUpper(), ToLower() , Substring(), IndexOf(), Contains(), Split(), Replace(), Trim()
 
 🏆 Solved multiple Google Classroom problems based on string operations and text processing.
+
+---
+### 🟢 29th December 2025
+
+
+- 📘 Studied **OOPs concepts in C#**:
+
+- 🧠 Solved multiple **scenario-based and logic-driven problems**:
+  - **Snake and Ladder game simulation**
+  - **Paragraph formatter tool**
+  - **Temperature analysis system**
+
+
+--- 
+### 🟢 30th December 2025
+
+- Solved several scenario-based problems using C#:
+
+  - Quiz grading system using arrays
+  - Library management system using 2D arrays
+  - String search and filtering operations
+  - Score calculation and result evaluation
