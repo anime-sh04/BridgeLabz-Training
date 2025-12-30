@@ -14,7 +14,7 @@ using System;
 class  StudentQuizGrader{
 	static void Main(string[] args){
 		StudentQuizGrader obj = new StudentQuizGrader();
-		obj.input();
+		obj.input(); 
 	}
 	void input(){
 		/* string[] correctAnswers = new string[10];
