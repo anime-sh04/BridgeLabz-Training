@@ -6,8 +6,8 @@ Focus: Strings, Methods
 ● Split the string to extract task names and amounts.
 ● Calculate total invoice amount.
 ● Example Methods:
-● ParseInvoice(string input)
-● GetTotalAmount(string[] tasks)*/
+● splitcomma(string input)
+● TotalSum(string[] tasks)*/
 
 using System;
 
@@ -18,23 +18,23 @@ class GeneratorForFreelancers{
         string input = Console.ReadLine();
 		GeneratorForFreelancers obj = new GeneratorForFreelancers();
 
-        string[] tasks = obj.ParseInvoice(input);
+        string[] tasks = obj.splitcomma(input);
 
-        Console.WriteLine("Invoice Details:");
+        Console.WriteLine("Invoice:");
         foreach(string t in tasks){
             Console.WriteLine(t.Trim());
         }
 
-        int total = obj.GetTotalAmount(tasks);
-        Console.WriteLine("Total Invoice Amount = " + total);
+        int total = obj.TotalSum(tasks);
+        Console.WriteLine("Total Amount = " + total);
     }
 	
-    public string[] ParseInvoice(string input){
+    public string[] splitcomma(string input){
         string[] tasks = input.Split(',');
         return tasks;
     }
 
-    public int GetTotalAmount(string[] tasks){
+    public int TotalSum(string[] tasks){
         int total = 0;
 
         foreach(string task in tasks){
