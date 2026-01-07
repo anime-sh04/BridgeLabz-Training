@@ -23,7 +23,7 @@ namespace Employee
                 Console.WriteLine("4. Calculate Wage"); // UC2 Adding Daily Wage
                 Console.WriteLine("5. Exit");
                 int choice = int.Parse(Console.ReadLine());
-                switch (choice)
+                switch (choice)           // UC4 Solving using switch Case
                 {
                     case 1:
                         _employeeChoice.AddEmployee(); break;
