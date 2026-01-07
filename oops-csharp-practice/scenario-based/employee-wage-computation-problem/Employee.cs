@@ -8,12 +8,13 @@ namespace Employee
 {
     internal class Employee
     {
-        private string employeeid {  get; set; }
-        private string employeename { get; set; }
-        private double employeedailywage { get; set; } // UC2 Adding Daily Wage
-        private long employeephonenumber { get; set; }
+        private string employeeid;
+        private string employeename;
+        private double employeedailywage;  // UC2 Adding Daily Wage
+        private long employeephonenumber;
 
-        private string employeeattendance {  get; set; } // UC1 Employee Attendance Check
+        private string employeeattendance;   // UC1 Employee Attendance Check
+        private bool isparttime = false; // UC3 Added PartTIme Employees and Wage
 
         public string EmployeeId
         {
@@ -42,10 +43,19 @@ namespace Employee
             set { employeeattendance = value; }
         }
 
+        public bool IsPartTime
+        {
+            get { return isparttime; }
+            set { isparttime = value; }
+        }
+
 
         public override string? ToString()
         {
-            return "Employee ID : "+employeeid + "\nEmployee Name : " + employeename + "\nEmployee Salary/Wage : " + employeedailywage + "\nEmployee Phone Number : " + employeephonenumber + "\nEmployee Attendance : " + employeeattendance;
+            if (isparttime) 
+                return "----PART TIME EMPLOYEE----\n\nEmployee ID : "+employeeid + "\nEmployee Name : " + employeename + "\nEmployee Salary/Wage : " + employeedailywage + "\nEmployee Phone Number : " + employeephonenumber + "\nEmployee Attendance : " + employeeattendance;
+            else
+                return "----FULL TIME EMPLOYEE----\n\nEmployee ID : " + employeeid + "\nEmployee Name : " + employeename + "\nEmployee Salary/Wage : " + employeedailywage + "\nEmployee Phone Number : " + employeephonenumber + "\nEmployee Attendance : " + employeeattendance;
         }
     }
 }
