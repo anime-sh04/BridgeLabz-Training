@@ -14,7 +14,7 @@ namespace Employee
         private long employeephonenumber;
 
         private string employeeattendance;   // UC1 Employee Attendance Check
-        private bool isparttime = false; // UC3 Added PartTIme Employees and Wage
+        private bool isparttime = false; //UC3 Added PartTIme Employees and Wage
 
         public string EmployeeId
         {

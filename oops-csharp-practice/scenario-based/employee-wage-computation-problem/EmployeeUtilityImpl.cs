@@ -87,7 +87,7 @@ namespace Employee
                 if (hourinput > 8)
                     Console.WriteLine("Can't be greater than 8");
                 else
-                    employee.EmployeeDailyWage = wageperhour * hourinput;
+                    employee.EmployeeDailyWage = wageperhour *hourinput;
                 Console.WriteLine($"Your total wage is : {employee.EmployeeDailyWage}");
             }
         }
