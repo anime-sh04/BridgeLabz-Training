@@ -33,6 +33,7 @@ namespace Employee
 
         }
 
+        // UC1 Employee Attendance Check
         public void AttendanceCheck()
         {
             int i = 1;
@@ -48,6 +49,22 @@ namespace Employee
                     employee.EmployeeAttendance = "Present";
                 else
                     employee.EmployeeAttendance = "Abesent";
+            }
+        }
+
+        public void EmployeeDailyWage()
+        {
+            int i = 1;
+            foreach (Employee employee in employees)
+            {
+                Console.WriteLine($"How many hours employee {i} worked for? ");
+                i++;
+                int hourinput = int.Parse(Console.ReadLine());
+                if (hourinput > 8)
+                    Console.WriteLine("Can't be greater than 8");
+                else
+                    employee.EmployeeDailyWage = 20 * hourinput;
+                Console.WriteLine($"Your total wage is : {employee.EmployeeDailyWage}");
             }
         }
         

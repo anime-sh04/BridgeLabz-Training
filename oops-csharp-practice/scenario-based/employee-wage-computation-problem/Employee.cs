@@ -10,7 +10,7 @@ namespace Employee
     {
         private string employeeid {  get; set; }
         private string employeename { get; set; }
-        private double employeesalary { get; set; }
+        private double employeedailywage { get; set; }
         private long employeephonenumber { get; set; }
 
         private string employeeattendance {  get; set; } // UC1 Employee Attendance Check
@@ -25,10 +25,10 @@ namespace Employee
             get { return employeename; }
             set { employeename = value; }
         }
-        public double EmployeeSalary
+        public double EmployeeDailyWage
         {
-            get { return employeesalary;  }
-            set { employeesalary = value; }
+            get { return employeedailywage;  }
+            set { employeedailywage = value; }
         }
         public long EmployeePhoneNumber
         {
@@ -45,7 +45,7 @@ namespace Employee
 
         public override string? ToString()
         {
-            return "Employee ID : "+employeeid + "\nEmployee Name : " + employeename + "\nEmployee Salary : " + employeesalary + "\nEmployee Phone Number : " + employeephonenumber + "\nEmployee Attendance : " + employeeattendance;
+            return "Employee ID : "+employeeid + "\nEmployee Name : " + employeename + "\nEmployee Salary/Wage : " + employeedailywage + "\nEmployee Phone Number : " + employeephonenumber + "\nEmployee Attendance : " + employeeattendance;
         }
     }
 }

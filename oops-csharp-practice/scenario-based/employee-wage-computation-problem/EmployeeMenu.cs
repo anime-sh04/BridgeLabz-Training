@@ -19,8 +19,9 @@ namespace Employee
             {
                 Console.WriteLine("1. Add Employee");
                 Console.WriteLine("2. Display Employees");
-                Console.WriteLine("3. Attendance Check");
-                Console.WriteLine("4. Exit");
+                Console.WriteLine("3. Attendance Check"); // UC1 Employee Attendance Check
+                Console.WriteLine("4. Calculate Wage");
+                Console.WriteLine("5. Exit");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
                 {
@@ -29,8 +30,10 @@ namespace Employee
                     case 2:
                         _employeeChoice.DisplayEmployees(); break;
                     case 3:
-                        _employeeChoice.AttendanceCheck(); break;
+                        _employeeChoice.AttendanceCheck(); break; // UC1 Employee Attendance Check
                     case 4:
+                        _employeeChoice.EmployeeDailyWage();break;
+                    case 5:
                         return;
 
                 }
