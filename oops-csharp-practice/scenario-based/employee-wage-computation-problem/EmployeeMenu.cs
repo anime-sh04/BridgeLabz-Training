@@ -20,7 +20,7 @@ namespace Employee
                 Console.WriteLine("1. Add Employee");
                 Console.WriteLine("2. Display Employees");
                 Console.WriteLine("3. Attendance Check"); // UC1 Employee Attendance Check
-                Console.WriteLine("4. Calculate Wage");
+                Console.WriteLine("4. Calculate Wage"); // UC2 Adding Daily Wage
                 Console.WriteLine("5. Exit");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
@@ -32,7 +32,7 @@ namespace Employee
                     case 3:
                         _employeeChoice.AttendanceCheck(); break; // UC1 Employee Attendance Check
                     case 4:
-                        _employeeChoice.EmployeeDailyWage();break;
+                        _employeeChoice.EmployeeDailyWage();break; // UC2 Adding Daily Wage
                     case 5:
                         return;
 

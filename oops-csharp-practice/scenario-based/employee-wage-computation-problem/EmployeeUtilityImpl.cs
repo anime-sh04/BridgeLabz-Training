@@ -52,6 +52,7 @@ namespace Employee
             }
         }
 
+        // UC2 Adding Daily Wage
         public void EmployeeDailyWage()
         {
             int i = 1;

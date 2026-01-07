@@ -10,7 +10,7 @@ namespace Employee
     {
         private string employeeid {  get; set; }
         private string employeename { get; set; }
-        private double employeedailywage { get; set; }
+        private double employeedailywage { get; set; } // UC2 Adding Daily Wage
         private long employeephonenumber { get; set; }
 
         private string employeeattendance {  get; set; } // UC1 Employee Attendance Check

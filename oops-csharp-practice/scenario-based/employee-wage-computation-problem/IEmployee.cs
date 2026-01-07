@@ -10,7 +10,7 @@ namespace Employee
     {
         Employee AddEmployee();
         void DisplayEmployees();
-        void AttendanceCheck();
-        void EmployeeDailyWage();
+        void AttendanceCheck();  // UC1 Employee Attendance Check
+        void EmployeeDailyWage(); // UC2 Adding Daily Wage
     }
 }
