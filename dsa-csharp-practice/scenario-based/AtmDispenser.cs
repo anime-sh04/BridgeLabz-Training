@@ -4,7 +4,8 @@
     {
         void DispenseNotes(int amount)
         {
-            int[] notes = { 500, 200, 100, 50, 20, 10, 5, 2, 1 };
+            //int[] notes = { 500, 200, 100, 50, 20, 10, 5, 2, 1 };  // Scenario A with 500 note
+            int[] notes = {200, 100, 50, 20, 10, 5, 2, 1 };  // Scenario B without 500 note
             int i = 0;
             while (amount != 0)
             {
@@ -19,7 +20,6 @@
         }
         static void Main(string[] args)
         {
-			Console.WriteLine("Enter the amount you want to withdraw :");
             int amount = int.Parse(Console.ReadLine());
             if (amount == 0) 
             { 
