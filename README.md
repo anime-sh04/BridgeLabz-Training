@@ -2,7 +2,6 @@
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Focus-Learning-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Primary-C%23-purple?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Also-Java-orange?style=for-the-badge" />
 </p>
 
 
@@ -21,7 +20,6 @@ It covers core programming concepts, object-oriented design, data structures, an
 
 ## 🗒️ Daily Progress Log
 
----
 
 ### 📆 16th December 2025
 - 🛠️ Completed Git setup and created GitHub repository.
