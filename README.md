@@ -13,13 +13,13 @@
 > Everything here exists to document progress, mistakes, and improvement.
 
 
-## Overview 
+## 🪜 Overview 
 
 This repository documents my daily learning progress and hands-on practice during the BridgeLabz Training Program.
 It covers core programming concepts, object-oriented design, data structures, and problem-solving using C#, Java, and .NET technologies.
 
 
-## 📅 Daily Progress Log
+## 🗒️ Daily Progress Log
 
 ---
 
