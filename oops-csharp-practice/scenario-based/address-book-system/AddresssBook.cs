@@ -20,8 +20,38 @@ namespace AddressBook
                 return;
             }
 
-            // Adding Contact - UC1 Ability to create Contacts
-            ContactPerson person = new ContactPerson("Animesh", "Rajpoot", "qwer", "Mathura", "UP", "234321", 1234567, "123456");
+            // Adding Contact 
+            // - UC1 Ability to create Contacts
+
+            //ContactPerson person = new ContactPerson("Animesh", "Rajpoot", "qwer", "Mathura", "UP", "234321", 1234567, "123456");
+
+            // - UC2 Ability to add new Contacts to address book
+
+            Console.WriteLine("Enter First Name:");
+            string firstName = Console.ReadLine();
+
+            Console.WriteLine("Enter Last Name:");
+            string lastName = Console.ReadLine();
+
+            Console.WriteLine("Enter Address:");
+            string address = Console.ReadLine();
+
+            Console.WriteLine("Enter City:");
+            string city = Console.ReadLine();
+
+            Console.WriteLine("Enter State:");
+            string state = Console.ReadLine();
+
+            Console.WriteLine("Enter Zip:");
+            string zip = Console.ReadLine();
+
+            Console.WriteLine("Enter Phone Number:");
+            long phoneNumber = long.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter Email:");
+            string email = Console.ReadLine();
+
+            ContactPerson person = new ContactPerson(firstName, lastName, address, city, state, zip, phoneNumber, email);
             contacts[count] = person;
             count++;    
         }
