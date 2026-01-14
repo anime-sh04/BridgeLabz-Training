@@ -81,7 +81,8 @@ BridgeLabz-Training/
 │   └── README.md
 │
 └── README.md
-</details> ```
+```
+</details>
 
 
 ## 🗒️ Daily Progress Log
