@@ -17,6 +17,72 @@
 This repository documents my daily learning progress and hands-on practice during the BridgeLabz Training Program.
 It covers core programming concepts, object-oriented design, data structures, and problem-solving using C#, Java, and .NET technologies.
 
+## 🗂️ Repository Structure
+
+<details>
+<summary><strong>📁 Click to expand folder structure</strong></summary>
+
+```text
+BridgeLabz-Training/
+│
+├── core-csharp-practice/
+│   ├── gcr-codebase/
+│   │   ├── csharp-arrays/
+│   │   │   ├── level01/
+│   │   │   └── level02/
+│   │   │
+│   │   ├── csharp-control-flows/
+│   │   │   ├── level01/
+│   │   │   ├── level02/
+│   │   │   └── level03/
+│   │   │
+│   │   ├── csharp-methods/
+│   │   │   ├── level01/
+│   │   │   ├── level02/
+│   │   │   └── level03/
+│   │   │
+│   │   ├── csharp-programming-elements/
+│   │   │   ├── level01/
+│   │   │   └── level02/
+│   │   │
+│   │   ├── csharp-strings/
+│   │   │   ├── level01/
+│   │   │   └── level02/
+│   │   │
+│   │   └── extra-csharp-strings/
+│   │       ├── level01/
+│   │       └── level02/
+│   │
+│   ├── programming-elements/
+│   ├── leet-code-codebase/
+│   └── scenario-based/
+│
+├── dsa-csharp-practice/
+│   ├── gcr-codebase/
+│   │   ├── csharp-builders-and-searching/
+│   │   ├── csharp-linked-list/
+│   │   ├── csharp-sorting-algorithms/
+│   │   └── csharp-stack-queue-hashmap/
+│   │
+│   ├── scenario-based/
+│   └── README.md
+│
+├── oops-csharp-practice/
+│   ├── gcr-codebase/
+│   │   ├── csharp-class-objects/
+│   │   ├── csharp-constructors/
+│   │   ├── csharp-encapsulation/
+│   │   ├── csharp-inheritance/
+│   │   ├── csharp-object-oriented-design/
+│   │   └── csharp-this-sealed-static-keywords/
+│   │
+│   ├── leet-code-codebase/
+│   ├── scenario-based/
+│   └── README.md
+│
+└── README.md
+</details> ```
+
 
 ## 🗒️ Daily Progress Log
 
