@@ -1,12 +1,16 @@
 <p align="center">
-  <img src="https://img.shields.io/github/stars/anime-sh04/BridgeLabz-Training?style=for-the-badge" />
-  <img src="https://img.shields.io/github/forks/anime-sh04/BridgeLabz-Training?style=for-the-badge" />
-  <img src="https://img.shields.io/github/issues/anime-sh04/BridgeLabz-Training?style=for-the-badge" />
-  <img src="https://img.shields.io/github/license/anime-sh04/BridgeLabz-Training?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-Learning-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Primary-C%23-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Also-Java-orange?style=for-the-badge" />
 </p>
 
 
-# 🚀 BridgeLabz Training
+# ⭐ BridgeLabz Training
+
+> [!IMPORTANT]
+> 🧠 **This is not a showcase repo, this is a growth log.**  
+> Everything here exists to document progress, mistakes, and improvement.
 
 
 ## Overview 
