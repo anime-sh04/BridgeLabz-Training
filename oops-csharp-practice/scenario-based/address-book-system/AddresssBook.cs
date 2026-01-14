@@ -56,6 +56,93 @@ namespace AddressBook
             count++;    
         }
 
+        // - UC3 Ability to edit Contacts
+        public void EditContactUsingName()
+        {
+            Console.WriteLine("Enter the FIRST name of the person whose info you want to edit:");
+            string name = Console.ReadLine();
+
+            bool found = false;
+
+            for (int i = 0; i < count; i++)
+            {
+                if (contacts[i].firstname.Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    found = true;
+
+                    Console.WriteLine("\nContact Found!");
+                    Console.WriteLine(contacts[i]);
+                    Console.WriteLine("What would you like to edit?");
+                    Console.WriteLine("1. First Name");
+                    Console.WriteLine("2. Last Name");
+                    Console.WriteLine("3. Address");
+                    Console.WriteLine("4. City");
+                    Console.WriteLine("5. State");
+                    Console.WriteLine("6. Zip");
+                    Console.WriteLine("7. Phone Number");
+                    Console.WriteLine("8. Email");
+
+                    int toEdit = int.Parse(Console.ReadLine());
+
+                    switch (toEdit)
+                    {
+                        case 1:
+                            Console.Write("Enter new First Name: ");
+                            contacts[i].firstname = Console.ReadLine();
+                            break;
+
+                        case 2:
+                            Console.Write("Enter new Last Name: ");
+                            contacts[i].lastname = Console.ReadLine();
+                            break;
+
+                        case 3:
+                            Console.Write("Enter new Address: ");
+                            contacts[i].address = Console.ReadLine();
+                            break;
+
+                        case 4:
+                            Console.Write("Enter new City: ");
+                            contacts[i].city = Console.ReadLine();
+                            break;
+
+                        case 5:
+                            Console.Write("Enter new State: ");
+                            contacts[i].state = Console.ReadLine();
+                            break;
+
+                        case 6:
+                            Console.Write("Enter new Zip: ");
+                            contacts[i].zip = Console.ReadLine();
+                            break;
+
+                        case 7:
+                            Console.Write("Enter new Phone Number: ");
+                            contacts[i].phoneNumber = int.Parse(Console.ReadLine());
+                            break;
+
+                        case 8:
+                            Console.Write("Enter new Email: ");
+                            contacts[i].email = Console.ReadLine();
+                            break;
+
+                        default:
+                            Console.WriteLine("Invalid option.");
+                            return;
+                    }
+
+                    Console.WriteLine("\nContact edited successfully!");
+                    return;
+                }
+            }
+
+            if (!found)
+            {
+                Console.WriteLine("\nNo contact found with that name.");
+            }
+        }
+
+
         // To display all Contacts
         public void DisplayContacts()
         {

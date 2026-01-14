@@ -15,6 +15,8 @@ namespace AddressBook
             {
                 Console.WriteLine("1. Add Contact");
                 Console.WriteLine("2. Display Contacts");
+
+                Console.WriteLine("3. Edit Contact");
                 Console.WriteLine("0. Exit");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
@@ -26,6 +28,9 @@ namespace AddressBook
                         break;
                     case 2:
                         book.DisplayContacts();
+                        break;
+                    case 3:
+                        book.EditContactUsingName();
                         break;
                     default:
                         Console.WriteLine("Invalid Choice");
