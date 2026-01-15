@@ -17,6 +17,7 @@ namespace AddressBook
                 Console.WriteLine("2. Display Contacts");         // Bonus
                 Console.WriteLine("3. Edit Contact");             // UC-3 Ability to Edit a Contact
                 Console.WriteLine("4. Delete Contact");           // UC-4 Ability to Delete a Contact
+                Console.WriteLine("5. Add Multiple Contacts");    // UC-5 Ability to Add Multiple Contacts
                 Console.WriteLine("0. Exit");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
@@ -24,7 +25,6 @@ namespace AddressBook
                     case 0:return;
                     case 1:
                         book.AddContact();
-                        Console.WriteLine("Added Contact Successfully");
                         break;
                     case 2:
                         book.DisplayContacts();
@@ -34,6 +34,9 @@ namespace AddressBook
                         break;
                     case 4:
                         book.DeleteContactUsingName();
+                        break;
+                    case 5:
+                        book.AddMultipleContacts();
                         break;
                     default:
                         Console.WriteLine("Invalid Choice");

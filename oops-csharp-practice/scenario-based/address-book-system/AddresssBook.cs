@@ -60,7 +60,8 @@ namespace AddressBook
             contacts[count] = person;
             //contacts[count+1] = person2;
             //contacts[count+2] = person3;
-            count++;    
+            count++;
+            Console.WriteLine("Added Contact Successfully");
         }
 
         // - UC3 Ability to edit Contacts
@@ -177,6 +178,21 @@ namespace AddressBook
             }
         }
 
+        // - UC5 Ability to Add Multiple Contacts
+        public void AddMultipleContacts()
+        {
+            while (true)
+            {
+                AddContact();
+                Console.WriteLine("Do you want to add more contacts? Enter Y if yes else any other key..");
+                string choice = Console.ReadLine();
+                if (choice == "Y")
+                {
+                    continue;
+                }
+                else { return; }
+            }
+        }
         // To display all Contacts
         public void DisplayContacts()
         {
