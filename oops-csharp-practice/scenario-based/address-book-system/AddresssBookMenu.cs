@@ -9,7 +9,7 @@ namespace AddressBook
 {
     internal class AddresssBookMenu
     {
-        private AddresssBook[] books = new AddresssBook[20];
+        private AddresssBook[] books = new AddresssBook[20];  // - UC6 Added Multiple Address Books
         private int bookCount = 0;
 
         private AddresssBook currentBook;
@@ -45,7 +45,7 @@ namespace AddressBook
             }
         }
 
-        private void CreateAddressBook()
+        private void CreateAddressBook()   // - UC6 Added Multiple Address Books
         {
             Console.Write("Enter new Address Book name: ");
             string name = Console.ReadLine();
@@ -61,7 +61,7 @@ namespace AddressBook
             Console.WriteLine("Address Book created successfully!");
         }
 
-        private void OpenAddressBook()
+        private void OpenAddressBook()    // - UC6 Added Multiple Address Books
         {
             if (bookCount == 0)
             {

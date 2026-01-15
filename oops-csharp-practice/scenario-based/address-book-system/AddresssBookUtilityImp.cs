@@ -59,10 +59,21 @@ namespace AddressBook
 
             ContactPerson person = new ContactPerson(firstName, lastName, address, city, state, zip, phoneNumber, email);
 
+            for (int i = 0; i < currentBook.Count; i++)    // - UC7 Ability to check duplicate contact and reject them
+            {
+                if (currentBook.Contacts[i].Equals(person))
+                {
+                    Console.WriteLine("Duplicate contact! This person already exists in the Address Book.");
+                    return;
+                }
+            }
+
+            currentBook.Contacts[currentBook.Count] = person;
+
+
             //ContactPerson person = new ContactPerson("Animesh", "Rajpoot", "qwer", "Mathura", "UP", "234321", 1234567, "123456");
             //ContactPerson person2 = new ContactPerson("Anuesg", "Rajpoot", "qwer", "Mathura", "UP", "234321", 1234567, "123456");
             //ContactPerson person3 = new ContactPerson("Afifa", "Rajpoot", "qwer", "Mathura", "UP", "234321", 1234567, "123456");
-            currentBook.Contacts[currentBook.Count] = person;
             //currentBook.Contacts[currentBook.Count+1] = person2;
             //currentBook.Contacts[currentBook.Count+2] = person3;
             currentBook.Count++;

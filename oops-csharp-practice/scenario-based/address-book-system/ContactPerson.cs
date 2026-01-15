@@ -42,5 +42,16 @@ namespace AddressBook
         {
             return $"First Name: {FirstName}\nLast Name: {LastName}\nAddress: {Address}\nCity: {City}\nState: {State}\nZip: {Zip}\nPhone Number: {PhoneNumber}\nEmail: {Email}";
         }
+
+        public override bool Equals(object obj)   // - UC7 Ability to check duplicate contact and reject them
+        {
+            if (obj == null || GetType() != obj.GetType())
+                return false;
+
+            ContactPerson other = (ContactPerson)obj;
+
+            return this.FirstName.Equals(other.FirstName, StringComparison.OrdinalIgnoreCase);
+        }
+
     }
 }

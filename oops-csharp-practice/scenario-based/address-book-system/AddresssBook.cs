@@ -7,7 +7,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace AddressBook
 {
-    internal class AddresssBook
+    internal class AddresssBook // - UC6 Added Multiple Address Books
     {
         public string BookName { get; private set; }
         public ContactPerson[] Contacts = new ContactPerson[1000];
