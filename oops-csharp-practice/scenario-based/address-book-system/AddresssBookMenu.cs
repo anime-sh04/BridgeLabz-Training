@@ -22,6 +22,7 @@ namespace AddressBook
                 Console.WriteLine("1. Create New Address Book");
                 Console.WriteLine("2. Open Address Book");
                 Console.WriteLine("3. Search Person by City/State");   // UC-8 Ability to search Person in a City or State across the multiple Address Books
+                Console.WriteLine("4. View Persons by City/State");
                 Console.WriteLine("0. Exit");
 
 
@@ -42,6 +43,11 @@ namespace AddressBook
                     case 3:
                         SearchPersonByCityOrState();  // UC-8 Ability to search Person in a City or State across the multiple Address Books
                         break;
+
+                    case 4:
+                        ViewPersonsByCityOrState();   // UC-9 Ability to view Person in a City or State across the multiple Address Books
+                        break;
+
 
 
                     default:
@@ -154,6 +160,38 @@ namespace AddressBook
             if (!found)
                 Console.WriteLine("No matching persons found.");
         }
+
+
+        // UC-9 Ability to view Person in a City or State across the multiple Address Books
+        private void ViewPersonsByCityOrState()
+        {
+            Console.Write("Enter City or State: ");
+            string key = Console.ReadLine();
+
+            bool found = false;
+
+            Console.WriteLine("\n===== Persons List =====");
+
+            for (int i = 0; i <bookCount; i++)
+            {
+                AddresssBook book = books[i];
+
+                for (int j = 0; j <book.Count; j++)
+                {
+                    ContactPerson person = book.Contacts[j];
+
+                    if (person.city.Equals(key, StringComparison.OrdinalIgnoreCase) ||person.state.Equals(key, StringComparison.OrdinalIgnoreCase))
+                    {
+                        Console.WriteLine($"\n[Address Book: {book.BookName}]");
+                        Console.WriteLine(person);
+                        found = true;
+                    }
+                }
+            }
+            if (!found)
+                Console.WriteLine("No persons found for this City/State.");
+        }
+
 
     }
 }
