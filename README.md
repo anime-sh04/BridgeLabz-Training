@@ -287,9 +287,13 @@ BridgeLabz-Training/
 - 🎬 Created CinemaTime – Movie Schedule Manager
 - 📚 Developed BookBuddy – Digital Bookshelf App
 
+---
+
 ### 📆 14th January 2026
 - 📊 Submission of **Algorithm’s Runtime Analysis & Big-O Notation**
 - 🧠 Learned time complexity and performance evaluation of algorithms.
+
+---
 
 ### 📆 15th January 2026
 - Designed and completed the Address Book System with full functionality from UC1 to UC11.
