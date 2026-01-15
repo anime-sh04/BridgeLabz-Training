@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace AddressBook
 {
@@ -52,7 +53,13 @@ namespace AddressBook
             string email = Console.ReadLine();
 
             ContactPerson person = new ContactPerson(firstName, lastName, address, city, state, zip, phoneNumber, email);
+
+            //ContactPerson person = new ContactPerson("Animesh", "Rajpoot", "qwer", "Mathura", "UP", "234321", 1234567, "123456");
+            //ContactPerson person2 = new ContactPerson("Anuesg", "Rajpoot", "qwer", "Mathura", "UP", "234321", 1234567, "123456");
+            //ContactPerson person3 = new ContactPerson("Afifa", "Rajpoot", "qwer", "Mathura", "UP", "234321", 1234567, "123456");
             contacts[count] = person;
+            //contacts[count+1] = person2;
+            //contacts[count+2] = person3;
             count++;    
         }
 
@@ -142,6 +149,33 @@ namespace AddressBook
             }
         }
 
+
+        // - UC4 Ability to Delete Contacts
+        public void DeleteContactUsingName()
+        {
+            Console.WriteLine("Enter the FIRST name of the person whose contact you want to delete:");
+            string name = Console.ReadLine();
+            bool found = false;
+            for (int i = 0; i < count; i++)
+            {
+                if (contacts[i].firstname.Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    found = true;
+                    for(int j = i; j < count-1; j++)
+                    {
+                        contacts[j] = contacts[j+1];
+                    }
+                    contacts[count - 1] = null;
+                    count--;
+                    Console.WriteLine("Deleted Successfully");
+                    return;
+                }
+            }
+            if (!found)
+            {
+                Console.WriteLine("No Contact Found");
+            }
+        }
 
         // To display all Contacts
         public void DisplayContacts()
