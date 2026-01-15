@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             AddresssBookMenu menu = new AddresssBookMenu();
-            menu.Menu();
+            menu.Start();
         }
     }
 }
