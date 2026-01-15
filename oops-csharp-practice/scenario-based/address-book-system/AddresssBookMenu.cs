@@ -13,7 +13,8 @@ namespace AddressBook
         private int bookCount = 0;
 
         private AddresssBook currentBook;
-        private AddresssBookUtilityImp utility;
+        private IAddressBook utility;
+
 
         public void Start()
         {
@@ -117,6 +118,7 @@ namespace AddressBook
                 Console.WriteLine("3. Edit Contact");
                 Console.WriteLine("4. Delete Contact");
                 Console.WriteLine("5. Add Multiple Contacts");
+                Console.WriteLine("6. Sort Contacts by Name");
                 Console.WriteLine("0. Back");
 
                 int choice = int.Parse(Console.ReadLine());
@@ -129,6 +131,9 @@ namespace AddressBook
                     case 3: utility.EditContactUsingName(); break;
                     case 4: utility.DeleteContactUsingName(); break;
                     case 5: utility.AddMultipleContacts(); break;
+                    case 6:
+                        utility.SortContactsByName();
+                        break;
                     default: Console.WriteLine("Invalid Choice"); break;
                 }
             }

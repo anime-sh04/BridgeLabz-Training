@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace AddressBook
 {
-    internal class AddresssBookUtilityImp
+    internal class AddresssBookUtilityImp : IAddressBook
     {
         private AddresssBook currentBook;
 
@@ -209,6 +210,41 @@ namespace AddressBook
                 else { return; }
             }
         }
+
+        // UC-11 Ability to sort the entries in the address book alphabetically by Person’s name
+        public void SortContactsByName()
+        {
+            if (currentBook.Count == 0)
+            {
+                Console.WriteLine("No contacts to sort.");
+                return;
+            }
+
+            // using Bubble Sort
+            for (int i = 0; i < currentBook.Count - 1; i++)
+            {
+                for (int j = 0; j < currentBook.Count - i-1; j++)
+                {
+                    if (string.Compare(currentBook.Contacts[j].firstname,currentBook.Contacts[j + 1].firstname,StringComparison.OrdinalIgnoreCase) > 0)
+                    {
+                        // swap
+                        ContactPerson temp = currentBook.Contacts[j];
+                        currentBook.Contacts[j] = currentBook.Contacts[j + 1];
+                        currentBook.Contacts[j + 1] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("\nContacts sorted alphabetically by First Name:");
+
+            for (int i = 0; i <currentBook.Count; i++)
+            {
+                Console.WriteLine(currentBook.Contacts[i]);
+                Console.WriteLine();
+            }
+        }
+
+
         // To display all Contacts
         public void DisplayContacts()
         {
