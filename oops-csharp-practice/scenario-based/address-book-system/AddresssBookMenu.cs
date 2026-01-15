@@ -23,6 +23,8 @@ namespace AddressBook
                 Console.WriteLine("2. Open Address Book");
                 Console.WriteLine("3. Search Person by City/State");   // UC-8 Ability to search Person in a City or State across the multiple Address Books
                 Console.WriteLine("4. View Persons by City/State");
+                Console.WriteLine("5. Count Persons by City/State");
+
                 Console.WriteLine("0. Exit");
 
 
@@ -47,6 +49,11 @@ namespace AddressBook
                     case 4:
                         ViewPersonsByCityOrState();   // UC-9 Ability to view Person in a City or State across the multiple Address Books
                         break;
+
+                    case 5:
+                        CountPersonsByCityOrState();  // UC-10 Ability to get number of contact persons i.e. count by City or State - Search Result will show count by city
+                        break;
+
 
 
 
@@ -190,6 +197,31 @@ namespace AddressBook
             }
             if (!found)
                 Console.WriteLine("No persons found for this City/State.");
+        }
+
+        // UC-10 Ability to get number of contact persons i.e. count by City or State - Search Result will show count by city
+        private void CountPersonsByCityOrState()
+        {
+            Console.Write("Enter City or State: ");
+            string key = Console.ReadLine();
+
+            int countResult = 0;
+
+            for (int i = 0; i < bookCount; i++)
+            {
+                AddresssBook book = books[i];
+                for (int j = 0; j < book.Count; j++)
+                {
+                    ContactPerson person = book.Contacts[j];
+
+                    if (person.city.Equals(key, StringComparison.OrdinalIgnoreCase) ||person.state.Equals(key, StringComparison.OrdinalIgnoreCase))
+                    {
+                        countResult++;
+                    }
+                }
+            }
+
+            Console.WriteLine($"\nTotal persons from {key}: {countResult}");
         }
 
 
