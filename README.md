@@ -299,3 +299,53 @@ BridgeLabz-Training/
 ### 📆 15th January 2026
 - Designed and completed the Address Book System with full functionality from UC1 to UC11.
 - Implemented features like add, edit, delete, duplicate validation, sorting, searching, counting, etc.
+
+---
+
+### 📆 16th January 2025
+- 🚦 Solved Traffic Manager System using DSA, OOPs, and Core C#
+  - Implemented Circular Linked List for traffic flow handling.
+- 📖 Solved Book Shelf Management System
+  - Used Linked List and HashMap for efficient book storage and lookup.
+
+---
+
+### 📆 17th January 2025
+- 🛒 Developed FlashDealz – Product Sorting by Discount
+  - Implemented Quick Sort for optimized performance.
+- 🏃 Built FitnessTracker – Daily Step Count Ranking
+  - Used Bubble Sort for ranking logic.
+
+---
+
+### 📆 19th January 2025
+- 📦 Implemented ParcelTracker –Delivery Chain Management
+  - Used Singly Linked List for parcel tracking.
+- 📝 Developed ExamProctor –Online Exam Review System
+  - Implemented Stack, HashMap, and Functions.
+- 🧬 Completed C# Generics concepts.
+
+---
+
+### 📆 20th January 2025
+- 🧩 Solved multiple problems on Generics
+- 🆔 Implemented Aadhar Number Sorting using Radix Sort
+- 🔐 Built Password Cracker Simulator using Backtracking
+- 🗂️ Learned Collections Framework:
+  - Overview and Hierarchy
+  - List Interface and Implementing Classes
+
+---
+
+### 📆 21st January 2025
+- 🎓 Developed EduResults – Rank Sheet Generator using Merge Sort
+- 🛍️ Built SmartCheckout – Supermarket Billing Queue
+  - Used Queue and HashMap
+- 🧱 Learned:
+  - Set Interface and Implementing Classes
+  - Queue and Deque Interfaces
+  - Map Interface and its Implementations
+  - Comparison of Implementations
+  - Real-World Use Cases and Best Practices
+
+---
