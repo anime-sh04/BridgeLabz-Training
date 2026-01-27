@@ -381,7 +381,7 @@ BridgeLabz-Training/
 
 ---
 
-### 📆 24th January 2025
+### 📆 26th January 2025
 - 🔍 Regex, MetaCharacter, Quantifier
 - 🧠 Common Patterns:
   - 📧 Email Validation
