@@ -334,18 +334,70 @@ BridgeLabz-Training/
 - 🗂️ Learned Collections Framework:
   - Overview and Hierarchy
   - List Interface and Implementing Classes
-
 ---
 
 ### 📆 21st January 2025
 - 🎓 Developed EduResults – Rank Sheet Generator using Merge Sort
 - 🛍️ Built SmartCheckout – Supermarket Billing Queue
-  - Used Queue and HashMap
+  - 🧮 Used Queue and HashMap
 - 🧱 Learned:
-  - Set Interface and Implementing Classes
-  - Queue and Deque Interfaces
-  - Map Interface and its Implementations
-  - Comparison of Implementations
-  - Real-World Use Cases and Best Practices
+  - 📦 Set Interface and Implementing Classes
+  - 🔁 Queue and Deque Interfaces
+  - 🗺️ Map Interface and its Implementations
+  - ⚖️ Comparison of Implementations
+  - 🌍 Real-World Use Cases and Best Practices
+
+---
+
+### 📆 22nd January 2025
+- 🚑 Solved one scenario-based question on AmbulanceRoute – Emergency Patient Navigation  
+  - 🔄 Circular Linked List
+- 📂 C# I/O Streams:
+  - 📚 Types of Streams
+  - 📄 File Streams
+  - 🧩 Object Streams
+  - 🔢 ByteArray Streams
+  - 🧵 Buffered Streams
+  - ✍️ Reader and Writer
+  - ✅ Key Considerations
+
+---
+
+### 📆 23rd January 2025
+- ⚠️ Exceptions:
+  - ❌ Types of Exceptions
+  - ✔️ Checked Exceptions
+  - ❗ Unchecked Exceptions
+  - 🛠️ Custom Exceptions
+- 🧪 Handling Exceptions:
+  - try-catch blocks
+  - try-catch-finally blocks
+  - try-with-resources statement
+  - throws clause
+  - throw statement
+- 🧩 Creating Custom Exceptions:
+  - Extending Exception Class
+  - Defining Constructors
+
+---
+
+### 📆 24th January 2025
+- 🔍 Regex, MetaCharacter, Quantifier
+- 🧠 Common Patterns:
+  - 📧 Email Validation
+  - 🔐 Password Strength
+  - 📱 Phone Number Format
+- ⚙️ C# Regex API:
+  - Pattern
+  - Matcher
+- 🛠️ Methods:
+  - find()
+  - matches()
+  - replaceAll()
+- 🧪 Introduction to NUnit Framework:
+  - 🏷️ NUnit Annotations
+  - ✍️ Writing Test Cases
+  - 🧱 Structure of a Test Class
+  - ✅ Assertions
 
 ---
