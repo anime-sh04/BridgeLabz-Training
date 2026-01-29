@@ -8,7 +8,7 @@
 # ⭐ BridgeLabz Training
 
 > [!IMPORTANT]
-> 🧠 **This is not a showcase repo, this is a growth log.**  
+> 🧠 **This is not a showcase repo, this is a growth log.* 
 > Everything here exists to document progress, mistakes, and improvement.
 
 
@@ -119,12 +119,12 @@ BridgeLabz-Training/
 - 📦 Learned **Data Types in C#**:
   - Value Types  
   - Reference Types  
-- 🧠 Solved **26 Google Classroom questions** for hands-on practice.
+- 🧠 Solved **26 Google Classroom questions*for hands-on practice.
 
 ---
 
 ### 📆 20th December 2025
-- 🔐 Learned and practiced **Access Modifiers in C#** with detailed examples:
+- 🔐 Learned and practiced **Access Modifiers in C#*with detailed examples:
   - `public`
   - `private`
   - `protected`
@@ -148,7 +148,7 @@ BridgeLabz-Training/
 - 🧮 Learned **Arrays in C#**:
   - Declaring and initializing arrays
   - Accessing and modifying elements
-  - Solved multiple **array-based problems** from Google Classroom.
+  - Solved multiple **array-based problems*from Google Classroom.
 
 ---
 
@@ -165,7 +165,7 @@ BridgeLabz-Training/
 
 ### 📆 26th December 2025
 
-- Learned **Strings in C#** in depth:
+- Learned **Strings in C#*in depth:
 
   - String declaration and initialization
   - String immutability
@@ -380,24 +380,51 @@ BridgeLabz-Training/
   - Defining Constructors
 
 ---
-
 ### 📆 26th January 2025
-- 🔍 Regex, MetaCharacter, Quantifier
-- 🧠 Common Patterns:
-  - 📧 Email Validation
-  - 🔐 Password Strength
-  - 📱 Phone Number Format
-- ⚙️ C# Regex API:
-  - Pattern
-  - Matcher
-- 🛠️ Methods:
-  - find()
-  - matches()
-  - replaceAll()
-- 🧪 Introduction to NUnit Framework:
-  - 🏷️ NUnit Annotations
-  - ✍️ Writing Test Cases
-  - 🧱 Structure of a Test Class
-  - ✅ Assertions
+
+* 🔍 Regex, MetaCharacters, Quantifiers
+* 🧠 Common Regex Patterns:
+
+  * 📧 Email Validation
+  * 🔐 Password Strength Validation
+  * 📱 Phone Number Formatting
+* ⚙️ C# Regex API:
+
+  * Pattern
+  * Matcher
+* 🛠️ Important Regex Methods:
+
+  * find()
+  * matches()
+  * replaceAll()
+* 🧪 Introduction to NUnit Framework:
+
+  * 🏷️ NUnit Annotations
+  * ✍️ Writing Unit Test Cases
+  * 🧱 Structure of an NUnit Test Class
+  * ✅ Assertions and Their Types
 
 ---
+
+### 📅 27th January 2026
+
+* 📘 Introduction to Annotations (Attributes in .NET)
+* 🏷️ Common Built-in Annotations
+* ✍️ Creating Custom Annotations
+* ⚙️ Applying Annotations in Real Applications
+* 🧠 Reflection Basics
+* 🔍 Understanding How Reflection Works
+* 💻 Using Reflection in .NET Applications
+* 🔗 Relationship Between Annotations and Reflection
+
+---
+
+### 📅 28th January 2026
+
+* 📘 Introduction to CSV Files
+* 🧱 Structure of a CSV File
+* 📖 Reading CSV Files in C#
+* ✍️ Writing Data to CSV Files
+* 🔄 Parsing CSV Data into Objects
+* ✅ Data Validation While Processing CSV
+* 🌍 Real-World Use Cases of CSV Files
