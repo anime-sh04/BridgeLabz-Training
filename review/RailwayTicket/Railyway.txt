@@ -1,0 +1,20 @@
+Problem Statement
+
+Design a railway reservation system with a fixed number of confirmed seats and a priority-based waiting list.
+
+Key Requirements
+
+Support a fixed number of confirmed seats.
+
+If seats are available, confirm the ticket immediately.
+
+If seats are full, add passengers to a fixed-capacity waiting list.
+
+Senior citizens have higher priority than general passengers.
+
+Maintain FIFO order within the same passenger category.
+
+On ticket cancellation, promote the highest-priority passenger from the waiting list.
+
+Do not use collection framework classes.
+
