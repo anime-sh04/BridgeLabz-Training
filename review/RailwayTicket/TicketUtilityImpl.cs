@@ -42,12 +42,13 @@ class TicketUtilityImpl : ITicket
     {
         for (int i = 0; i < waitingCount -1; i++){
             for (int j = 0; j < waitingCount- i-1; j++){
-                // if(!waiting[j].IsSenior() && waiting[j+1].IsSenior())
+                if(!waiting[j].IsSenior() && waiting[j+1].IsSenior()){
                 if(waiting[j].Age <waiting[j+1].Age)
                 {
                     Passenger temp = waiting[j];
                     waiting[j] = waiting[j+1];
                     waiting[j + 1] = temp;
+                }
                 }
             }
         }
